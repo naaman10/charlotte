@@ -1,0 +1,48 @@
+<div class="col-md-8">
+  <h1>Main Menu</h1>
+  <p>
+    If you have any allergies or intolerances please speak to the staff prior to ordering as we aim to cater for everyone and where necessary our chef will prepare something to suit
+  </p>
+  <h2 id="main-starters" class="menu-title">Starters & Lite Bites</h2> {% for main-starter in site.data.main-starters %}
+  <p class="bold">{{ main-starter.name }}<sup><i class="{{ main-starter.span}}"></i></sup><span class="price">{{ main-starter.price }}</span></p>
+  <p>{{ main-starter.description }}</p>
+  {% endfor %}
+  <h2 id="main-mains" class="menu-title">Mains</h2> {% for main-main in site.data.main-mains %}
+  <p class="bold">{{ main-main.name }}<sup><i class="{{ main-main.span}}"></i></sup><span class="price">{{ main-main.price }}</span></p>
+  <p>{{ main-main.description }}</p>
+  {% endfor %}
+  <h2 id="main-steak" class="menu-title">Steak Night Specials</h2>
+  <p>Thursdays Only</p>
+  <p>Choose from any 2 of the below with a bottle of house wine for £30</p>
+  <div>
+    <div class="menu-col1">
+      {% for main-steak in site.data.main-steak %}
+      <p>{{ main-steak.name1 }}</p>
+      <sup>{{ main-steak.description1}}</sup> {% endfor %}
+    </div>
+    <div class="menu-col2">
+      {% for main-steak in site.data.main-steak %}
+      <p>{{ main-steak.name2 }}</p>
+      <sup>{{ main-steak.description2}}</sup> {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <nav class="menu-nav">
+    <ul class="nav nav-stacked">
+      <li><a href="#main-starters">Starter & Lite Bites</a></li>
+      <li><a href="#main-mains">Mains</a></li>
+      <li><a href="#main-steak">Steak Night Specials</a></li>
+      <li><a href="#main-sides">A Bit on the Side</a></li>
+      <li><a href="#main-coldsan">Cold Sandwhichs</a></li>
+      <li><a href="#main-hotsan">Hot Sandwhichs</a></li>
+      <li><a href="#main-grill">From the Grill'</a></li>
+      <li><a href="#main-2410">2 For £10 Meal Deal</a></li>
+      <li><a href="#main-childrens">Children's Menu</a></li>
+      <li><a href="#main-drinks">Hot Drinks</a></li>
+      <li><a href="#main-desserts">Desserts</a></li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,130 @@
+<div class="container">
+  <h1>Main Menu</h1>
+  <p>
+    If you have any allergies or intolerances please speak to the staff prior to ordering as we aim to cater for everyone and where necessary our chef will prepare something to suit
+  </p>
+  <div class="col-md-12">
+  <div class="accordion" id="menuAccordian">
+    <div class="card">
+      <div class="card-header" id="startersMenu">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#startersMenuItems" aria-expanded="true" aria-controls="startersMenuItems">
+          <p id="main-starters" class="menu-title">Starters</p>
+        </button>
+      </h5>
+      </div>
+      <div id="startersMenuItems" class="collapse" aria-labelledby="headingOne" data-parent="#menuAccordian">
+        <div class="card-body">
+          {% for main-starter in site.data.main-starters %}
+          <p class="bold">{{ main-starter.name }}<span class="price">{{ main-starter.price }}</span></p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsMenu">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#mainsMenuItem" aria-expanded="false" aria-controls="mainsMenuItem">
+          <p id="main-mains" class="menu-title">Mains</p>
+        </button>
+      </h5>
+      </div>
+      <div id="mainsMenuItem" class="collapse" aria-labelledby="mainsMenu" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Steaks</h2>
+          <p class="lead">All our steaks are served with homemade onion rings, mushrooms, tomatoes, homemade chips and salad.</p>
+          {% for main-steak in site.data.main-steaks %}
+          <p class="bold">{{ main-steak.name }}<span class="price">{{ main-steak.price }}</span></p>
+          {% endfor %}
+          <h2>Favourites</h2>
+          <p class="lead">Smaller portions are available on items marked with *</p>
+          {% for main-favourite in site.data.main-favourites %}
+          <p class="bold">{{ main-favourite.name }}<span class="price">{{ main-favourite.price }}</span></p>
+          {% endfor %}
+          <h2>Fish</h2>
+          <p class="lead">Smaller portions are available on items marked with *</p>
+          {% for main-fish in site.data.main-fishs %}
+          <p class="bold">{{ main-fish.name }}<span class="price">{{ main-fish.price }}</span></p>
+          {% endfor %}
+          <h2>Vegetarian Options</h2> {% for main-veggie in site.data.main-veggies %}
+          <p class="bold">{{ main-veggie.name }}<span class="price">{{ main-veggie.price }}</span></p>
+          {% endfor %}
+          <h2>Salads</h2> {% for main-salad in site.data.main-salads %}
+          <p class="bold">{{ main-salad.name }}<span class="price">{{ main-salad.price }}</span></p>
+          {% endfor %}
+          <h2>Children's menu</h2>
+          <p class="lead">Suitable for 8 year olds and below</p>
+          {% for main-children in site.data.main-childrens %}
+          <p class="bold">{{ main-children.name }}<span class="price">{{ main-children.price }}</span></p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsSandwichs">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#sandwichMenuItem" aria-expanded="false" aria-controls="sandwichMenuItem">
+          <p id="main-starters" class="menu-title">Sandwichs</p>
+        </button>
+      </h5>
+      </div>
+      <div id="sandwichMenuItem" class="collapse" aria-labelledby="mainsSandwichs" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Sandwichs</h2> {% for main-sandwich in site.data.main-sandwichs %}
+          <p class="bold">{{ main-sandwich.name }}<span class="price">{{ main-sandwich.price }}</span></p>
+          {% endfor %}
+          <h2>Ploughman's Lunch</h2> {% for main-ploughman in site.data.main-ploughmans %}
+          <p class="bold">{{ main-ploughman.name }}<span class="price">{{ main-ploughman.price }}</span></p>
+          {% endfor %}
+          <h2>Jacket Potatoes</h2> {% for main-jacket in site.data.main-jackets %}
+          <p class="bold">{{ main-jacket.name }}<span class="price">{{ main-jacket.price }}</span></p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsPuddings">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#puddingMenuItem" aria-expanded="false" aria-controls="puddingMenuItem">
+          <p id="main-starters" class="menu-title">Puddings</p>
+        </button>
+      </h5>
+      </div>
+      <div id="puddingMenuItem" class="collapse" aria-labelledby="mainsPuddings" data-parent="#menuAccordian">
+        <div class="card-body">
+          {% for main-pudding in site.data.main-puddings %}
+          <p class="bold">{{ main-pudding.name }}<span class="price">{{ main-pudding.price }}</span></p>
+          {% endfor %}
+          <p>All served with a choice of fresh cream, ice cream or custard</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsSundays">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#sundayMenuItem" aria-expanded="false" aria-controls="sundayMenuItem">
+          <p id="main-starters" class="menu-title">Sunday Lunch</p>
+        </button>
+      </h5>
+      </div>
+      <div id="sundayMenuItem" class="collapse" aria-labelledby="mainsSundays" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Starters</h2> {% for sunday-starter in site.data.sunday-starters %}
+          <p class="bold">{{ sunday-starter.name }}<span class="price">{{ sunday-starter.price }}</span></p>
+          {% endfor %}
+          <h2>Traditional Sunday Lunch</h2>
+          <p class="lead">All served with our homemade Yorkshire Puddings, roast parsnips, roast potatoes, mash potatoes, new potatoes and fresh vegetables.</p>
+          {% for sunday-traditional in site.data.sunday-traditionals %}
+          <p class="bold">{{ sunday-traditional.name }}<span class="price">{{ sunday-traditional.price }}</span></p>
+          {% endfor %}
+          <h2>Fish Choice</h2> {% for sunday-fish in site.data.sunday-fishs %}
+          <p class="bold">{{ sunday-fish.name }}<span class="price">{{ sunday-fish.price }}</span></p>
+          {% endfor %}
+          <h2>Vegetarian Choice</h2> {% for sunday-veggie in site.data.sunday-veggies %}
+          <p class="bold">{{ sunday-veggie.name }}<span class="price">{{ sunday-veggie.price }}</span></p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

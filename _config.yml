@@ -1,0 +1,33 @@
+---
+title: The Black Dog
+description: Traditional Ale | Excellent Wines | Great Food
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+exclude:
+- "/vendor/"
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+- "*.gemspec"
+keep_files:
+- CNAME
+- ".git"
+- ".gitignore"
+subtitle: Traditional Ale | Excellent Wines | Great Food
+url:
+baseurl:
+cover: "/img/home-about.jpg"
+logo: "/img/jet.png"
+markdown: kramdown
+descriptions:
+- cat: jekyll
+  desc: Posts describing Jekyll setup techniques.
+- cat: dummy
+  desc: Just some placeholder posts, lorem ipsum and the rest.

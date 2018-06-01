@@ -1,0 +1,138 @@
+/*
+ * This css file includes styles added in the jekyll port of this theme.
+ * To find the original style.css that ships with Airspace, read airspace.css
+ *
+ */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,#slider .block h1 {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+#slider {
+  height: 100%;
+}
+ .italic {
+   font-style: italic;
+ }
+
+ .bold {
+   font-weight: bold;
+ }
+
+ .center-text {
+   text-align: center;
+ }
+
+.post-area {
+  padding: 40px;
+  width: 100%;
+  min-height: 150px;
+  background-color: white;
+  border-bottom: 1px dotted #ddd;
+}
+
+.post-area a:link, .post-area a:visited {
+  font-size: 30px;
+  color: #333;
+}
+
+.post-area a:hover {
+  color: #0D0017;
+}
+.btn-primary {
+  background-color: #F63D5D;
+  border: 0;
+}
+section#facilities {
+  padding: 100px;
+}
+#facilities {
+  opacity: 1;
+  color: white;
+  background-color: #555555;
+  text-align: center;
+}
+#facilities i {
+  font-size: 42px;
+}
+.menu-nav {
+  position: fixed;
+}
+sup .ion-asterisk {
+  color: #551C23;
+  font-size: 8px;
+}
+sup .ion-ios-nutrition {
+  color: orange;
+}
+.price {
+  float: right;
+  font-weight: bold;
+}
+.menu-title {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #F5F5F5;
+}
+.menu-col1 {
+  float: left;
+}
+.menu-col2 {
+  float: right;
+}
+#mapid {
+height: 400px;
+}
+.map {
+  height: 400px;
+  width: 100%;
+}
+#navbar-example2 {
+  position: fixed;
+}
+body {
+  position: relative;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.block .btn {
+  margin-top: 10px;
+}
+.callBook {
+  color: #F63D5D;
+}
+#about, #contact {
+  margin-top: 40px;
+}
+#about .card-header {
+  font-weight: bold;
+}
+#about .card-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+div.card-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-header button {
+  width: 100%;
+}
+#mainsMenu {
+  background-image: url('/img/steak-and-onion-rings.jpg');
+}
+div.card-header .menu-title {
+  color: white;
+  text-decoration: none;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 22px;
+  border-bottom: none;
+}
+div.card-header .menu-title:hover, div.card-header .btn-link:hover {
+  text-decoration: none;
+  font-weight: bold;
+}

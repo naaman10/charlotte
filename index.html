@@ -1,0 +1,147 @@
+---
+title: Home
+permalink: "/"
+layout: page
+---
+
+<!-- Banner -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10">
+        <div class="block">
+          <h1 class="animated fadeInUp">{{site.title}}</h1>
+          <p class="animated fadeInUp">{{site.description}}</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-2">
+        <div id="TA_certificateOfExcellence220" class="TA_certificateOfExcellence">
+        <ul id="Ol7A1xtpPuV" class="TA_links DLAlRSTK">
+        <li id="QWQQm2" class="JaeQSdw">
+        <a target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g658247-d2721265-Reviews-The_Black_Dog_Inn-Selby_Selby_District_North_Yorkshire_England.html"><img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a>
+        </li>
+        </ul>
+        </div>
+        <script async src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=220&amp;locationId=2721265&amp;lang=en_UK&amp;year=2018&amp;display_version=2"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Intro  -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>A Warm Welcome To The Black Dog Inn</h2>
+          </div>
+          <p>Hello and welcome to The Black Dog Inn, Camblesforth. Now under new management, we’re a family owned public house and restaurant situated in the heart of Yorkshire just a few miles south of York and Selby.</p>
+          <p>Whether you’re planning a day out, walking through the glorious local countryside or are simply passing, why not pop-in and sample our home cooked meals and range of drinks.</p>
+          <p>We have a large, beautiful beer garden available and are happy to cater for parties.</p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="{{ site.github.url }}/img/steak-and-onion-rings.jpg" alt="The Black Dog">
+
+          {% include tripAdvisor.html %}
+
+          <a class="btn btn-primary btn-block" href="tel:01757618777" >Call to book now <i class="ion-ios-telephone"></i> 01757 618 777</a>
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+<!-- Facilities Start -->
+<section id="facilities">
+  <div class="container">
+  <div class="row">
+    <div class="section-title">
+      <h2>Our Facilities</h2>
+
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="icon ion-fork"></i>
+        <h4>Restaurant</h4>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-ios-people"></i>
+        <h4>Family Friendly</h4>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-wifi"></i>
+        <h4>Free WiFi</h4>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-ios-football"></i>
+        <h4>Play Area</h4>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-model-s"></i>
+        <h4>Parking</h4>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-coffee"></i>
+        <h4>Tea & Coffee</h4>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-ios-pint"></i>
+        <h4>Craft Beer</h4>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="service-item">
+        <i class="ion-bonfire"></i>
+        <h4>Open Fire</h4>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Maps -->
+
+<div id="mapid"></div>
+
+<script type="text/javascript">
+      var mymap = L.map('mapid').setView([53.732394,-1.035255], 18);
+
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmFhbWFuMTAiLCJhIjoiY2o0MGV0b2g4MDMzejJ3bGdnMHp2YWtjZSJ9.UUFm8XZhor83udEWQwoypg', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'your.mapbox.project.id',
+    accessToken: 'your.mapbox.public.access.token'
+}).addTo(mymap);
+
+var greenIcon = L.icon({
+    iconUrl: '{{ site.github.url }}/map/images/marker-icon-2x.png',
+
+    iconSize:     [30, 30], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [3, 0] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([53.732394,-1.035255],{icon: greenIcon}).addTo(mymap);
+marker.bindPopup("<b>The Black Dog</b><br>Camblesforth<br>Selby<br>YO8 8HX").openPopup();
+</script>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>The Buccaneer | The Black Dog</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<meta property="og:url"           content="" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="The Black Dog" />
+<meta property="og:description"   content="Traditional Ale | Excellent Wines | Great Food" />
+<meta property="og:image"         content="/img/steak-and-onion-rings.jpg" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/airspace.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/ionicons.min.css" />
+<link rel="stylesheet" href="/css/animate.css" />
+<link rel="stylesheet" href="/css/responsive.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+  integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+  crossorigin=""/>
+<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Open+Sans" rel="stylesheet">
+
+<!-- Js -->
+<script src="/js/plugins.js"></script>
+<script src="/js/min/waypoints.min.js"></script>
+<script src="/js/jquery.counterup.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+   crossorigin=""></script>
+<script src="/js/main.js"></script>
+
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href=""><img src="/img/logo.png" alt="Logo" width="120"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/menus">Menus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/testimonials">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/special-events">Special Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+    <div class="my-2 my-sm-0">
+      <a href="tel:01757618777" ><h4 class="callBook"><i class="ion-ios-telephone"></i> 01757 618 777</h4></a>
+  </div>
+</nav>
+
+
+
+    <section>
+  <div class="container">
+    <div class="row animated fadeInUp">
+        <div class="block">
+
+        <!-- Nav tabs -->
+
+        </div>
+
+        <div class="container">
+  <h1>Main Menu</h1>
+  <p>
+    If you have any allergies or intolerances please speak to the staff prior to ordering as we aim to cater for everyone and where necessary our chef will prepare something to suit
+  </p>
+  <div class="col-md-12">
+  <div class="accordion" id="menuAccordian">
+    <div class="card">
+      <div class="card-header" id="startersMenu">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#startersMenuItems" aria-expanded="true" aria-controls="startersMenuItems">
+          <p id="main-starters" class="menu-title">Starters</p>
+        </button>
+      </h5>
+      </div>
+      <div id="startersMenuItems" class="collapse" aria-labelledby="headingOne" data-parent="#menuAccordian">
+        <div class="card-body">
+          
+          <p class="bold">Selection of warm breads<span class="price">£4.95</span></p>
+          
+          <p class="bold">Chef's Homemade Soup of the Day<span class="price">£5.50</span></p>
+          
+          <p class="bold">Homemade Yorkshire puddings<span class="price">£5.50</span></p>
+          
+          <p class="bold">Chefs choice of Pate<span class="price">£6.95</span></p>
+          
+          <p class="bold">Creamy garlic mushrooms<span class="price">£6.95</span></p>
+          
+          <p class="bold">Traditional prawn cocktail<span class="price">£6.95</span></p>
+          
+          <p class="bold">King prawns with garlic and chilli<span class="price">£7.25</span></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsMenu">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#mainsMenuItem" aria-expanded="false" aria-controls="mainsMenuItem">
+          <p id="main-mains" class="menu-title">Mains</p>
+        </button>
+      </h5>
+      </div>
+      <div id="mainsMenuItem" class="collapse" aria-labelledby="mainsMenu" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Steaks</h2>
+          <p class="lead">All our steaks are served with homemade onion rings, mushrooms, tomatoes, homemade chips and salad.</p>
+          
+          <p class="bold">T-bone steak (20-22oz)<span class="price">£24.45</span></p>
+          
+          <p class="bold">Fillet steak (8-10oz)<span class="price">£22.95</span></p>
+          
+          <p class="bold">Sirloin Steak (12-14oz)<span class="price">£19.50</span></p>
+          
+          <p class="bold">Various sauces available<span class="price">£2.45</span></p>
+          
+          <h2>Favourites</h2>
+          <p class="lead">Smaller portions are available on items marked with *</p>
+          
+          <p class="bold">Braised steak*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Barnsley chop*<span class="price">£16.95</span></p>
+          
+          <p class="bold">Braised lamb shank<span class="price">£15.45</span></p>
+          
+          <p class="bold">Chili con Carne*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Classic Meat Lasange<span class="price">£12.95</span></p>
+          
+          <p class="bold">Pan fried breast of duck<span class="price">£14.95</span></p>
+          
+          <p class="bold">Sweet and sour chicken or king prawns*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Gammon, egg and pineapple*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Steak in ale pie*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Twice cooked pork belly<span class="price">£14.95</span></p>
+          
+          <p class="bold">Chicken, ham and leek pie<span class="price">£12.95</span></p>
+          
+          <p class="bold">Chicken korma with naan bread<span class="price">£12.95</span></p>
+          
+          <h2>Fish</h2>
+          <p class="lead">Smaller portions are available on items marked with *</p>
+          
+          <p class="bold">Pan fried Sea Bass*<span class="price">£15.45</span></p>
+          
+          <p class="bold">Freshly battered Haddock*<span class="price">£13.45</span></p>
+          
+          <p class="bold">Fresh poached Salmon<span class="price">£12.95</span></p>
+          
+          <p class="bold">Breaded whole tail scampi*<span class="price">£12.95</span></p>
+          
+          <p class="bold">Steamed haddock*<span class="price">£13.95</span></p>
+          
+          <h2>Vegetarian Options</h2> 
+          <p class="bold">Vegetable lasagne<span class="price">£12.95</span></p>
+          
+          <p class="bold">Homemade vegetable curry<span class="price">£12.95</span></p>
+          
+          <p class="bold">Vegetarian chili with rice<span class="price">£12.95</span></p>
+          
+          <h2>Salads</h2> 
+          <p class="bold">Warm chicken and bacon salad<span class="price">£13.95</span></p>
+          
+          <p class="bold">Prawn salad<span class="price">£13.50</span></p>
+          
+          <p class="bold">Mixed meats salad<span class="price">£13.50</span></p>
+          
+          <h2>Children's menu</h2>
+          <p class="lead">Suitable for 8 year olds and below</p>
+          
+          <p class="bold">Braised steak<span class="price">£6.45</span></p>
+          
+          <p class="bold">Meat lasagne<span class="price">£6.45</span></p>
+          
+          <p class="bold">Haddock, chips and peas<span class="price">£6.45</span></p>
+          
+          <p class="bold">Chicken nuggets<span class="price">£6.45</span></p>
+          
+          <p class="bold">Fish fingers<span class="price">£6.45</span></p>
+          
+          <p class="bold">Sausage, mash and gravy<span class="price">£6.45</span></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsSandwichs">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#sandwichMenuItem" aria-expanded="false" aria-controls="sandwichMenuItem">
+          <p id="main-starters" class="menu-title">Sandwichs</p>
+        </button>
+      </h5>
+      </div>
+      <div id="sandwichMenuItem" class="collapse" aria-labelledby="mainsSandwichs" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Sandwichs</h2> 
+          <p class="bold">Hot beef and onion<span class="price">£7.45</span></p>
+          
+          <p class="bold">BBQ pulled pork<span class="price">£7.45</span></p>
+          
+          <p class="bold">Hot and kicking chicken<span class="price">£6.95</span></p>
+          
+          <p class="bold">Hot fish<span class="price">£7.45</span></p>
+          
+          <p class="bold">Prawn<span class="price">£6.95</span></p>
+          
+          <p class="bold">Roast ham<span class="price">£5.95</span></p>
+          
+          <p class="bold">Roast beef<span class="price">£5.95</span></p>
+          
+          <p class="bold">Tuna mayonnaise<span class="price">£5.95</span></p>
+          
+          <p class="bold">Cheese with Ploughman's pickle<span class="price">£5.95</span></p>
+          
+          <h2>Ploughman's Lunch</h2> 
+          <p class="bold">Selection of british meats, cheese and pickle<span class="price">£13.50</span></p>
+          
+          <h2>Jacket Potatoes</h2> 
+          <p class="bold">Jacket with prawns<span class="price">£7.95</span></p>
+          
+          <p class="bold">Jacket with chilli<span class="price">£7.95</span></p>
+          
+          <p class="bold">Jacket with tuna mayonnaise<span class="price">£6.95</span></p>
+          
+          <p class="bold">Jacket with Heinz baked beans<span class="price">£6.95</span></p>
+          
+          <p class="bold">Jacket with cheese<span class="price">£6.95</span></p>
+          
+          <p class="bold">Jacket with vegetarian chilli<span class="price">£6.95</span></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsPuddings">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#puddingMenuItem" aria-expanded="false" aria-controls="puddingMenuItem">
+          <p id="main-starters" class="menu-title">Puddings</p>
+        </button>
+      </h5>
+      </div>
+      <div id="puddingMenuItem" class="collapse" aria-labelledby="mainsPuddings" data-parent="#menuAccordian">
+        <div class="card-body">
+          
+          <p class="bold">Creme brulee<span class="price">£5.50</span></p>
+          
+          <p class="bold">Jam roly poly<span class="price">£5.50</span></p>
+          
+          <p class="bold">Treacle sponge<span class="price">£5.50</span></p>
+          
+          <p class="bold">Sticky toffee pudding<span class="price">£5.50</span></p>
+          
+          <p class="bold">Bread & Butter pudding<span class="price">£5.50</span></p>
+          
+          <p class="bold">Rice pudding<span class="price">£5.50</span></p>
+          
+          <p class="bold">Spotted dick<span class="price">£5.50</span></p>
+          
+          <p class="bold">Chocolate orange melt<span class="price">£5.50</span></p>
+          
+          <p class="bold">Chef's choice of cheesecake<span class="price">£5.50</span></p>
+          
+          <p class="bold">Chocolate profiterole<span class="price">£5.50</span></p>
+          
+          <p>All served with a choice of fresh cream, ice cream or custard</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="mainsSundays">
+        <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#sundayMenuItem" aria-expanded="false" aria-controls="sundayMenuItem">
+          <p id="main-starters" class="menu-title">Sunday Lunch</p>
+        </button>
+      </h5>
+      </div>
+      <div id="sundayMenuItem" class="collapse" aria-labelledby="mainsSundays" data-parent="#menuAccordian">
+        <div class="card-body">
+          <h2>Starters</h2> 
+          <p class="bold">Chef's Homemade Soup of the Day<span class="price">£5.50</span></p>
+          
+          <p class="bold">Homemade Yorkshire puddings<span class="price">£5.50</span></p>
+          
+          <p class="bold">Pate with toast and relish<span class="price">£6.95</span></p>
+          
+          <p class="bold">Creamy garlic mushrooms<span class="price">£6.95</span></p>
+          
+          <p class="bold">Traditional prawn cocktail<span class="price">£6.95</span></p>
+          
+          <p class="bold">King prawns with garlic and chilli<span class="price">£7.25</span></p>
+          
+          <h2>Traditional Sunday Lunch</h2>
+          <p class="lead">All served with our homemade Yorkshire Puddings, roast parsnips, roast potatoes, mash potatoes, new potatoes and fresh vegetables.</p>
+          
+          <p class="bold">Roast Lamb<span class="price">£11.95</span></p>
+          
+          <p class="bold">Roast Pork<span class="price">£11.95</span></p>
+          
+          <p class="bold">Roast Beef<span class="price">£11.95</span></p>
+          
+          <p class="bold">Roast Turkey<span class="price">£11.95</span></p>
+          
+          <p class="bold">Smaller Portions<span class="price">£10.75</span></p>
+          
+          <p class="bold">Kids' portions<span class="price">£6.45</span></p>
+          
+          <h2>Fish Choice</h2> 
+          <p class="bold">Sea Bass<span class="price">£15.45</span></p>
+          
+          <p class="bold">Salmon<span class="price">£12.95</span></p>
+          
+          <h2>Vegetarian Choice</h2> 
+          <p class="bold">Vegetable lasagne<span class="price">£12.95</span></p>
+          
+          <p class="bold">Cheese and Broccoli Bake<span class="price">£12.95</span></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer Start -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/menus">Menus</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/special-events">Special Events</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <p>Powered by <a href="http://www.ariesdesign.co/"><img src="/img/aries.png" width="40"> ARIES DESIGN</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>
