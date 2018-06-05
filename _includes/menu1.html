@@ -8,12 +8,12 @@
     <div class="card">
       <div class="card-header" id="startersMenu">
         <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#startersMenuItems" aria-expanded="true" aria-controls="startersMenuItems">
-          <p id="main-starters" class="menu-title">Starters</p>
+        <button id="menuButton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#startersMenuItems" aria-expanded="false" aria-controls="startersMenuItems">
+          <p id="main-starters" class="menu-title">Starters </p>
         </button>
       </h5>
       </div>
-      <div id="startersMenuItems" class="collapse" aria-labelledby="headingOne" data-parent="#menuAccordian">
+      <div id="startersMenuItems" class="collapse" aria-labelledby="startersMenu" data-parent="#menuAccordian">
         <div class="card-body">
           {% for main-starter in site.data.main-starters %}
           <p class="bold">{{ main-starter.name }}<span class="price">{{ main-starter.price }}</span></p>
